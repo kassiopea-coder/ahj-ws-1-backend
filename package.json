@@ -1,0 +1,26 @@
+{
+  "name": "ahj-ws1-backend",
+  "version": "1.0.0",
+  "description": "HTTP backend",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "npm install",
+    "start": "forever server.js",
+    "watch": "forever -w server.js",
+    "stop": "forever stopall",
+    "list": "forever list"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "author": "Nadezhda",
+  "license": "ISC",
+  "dependencies": {
+    "forever": "^3.0.4",
+    "koa": "^2.13.4",
+    "koa-body": "^4.2.0",
+    "koa-router": "^10.0.0",
+    "koa2-cors": "^2.0.6",
+    "ws": "^7.4.6"
+  }
+}
